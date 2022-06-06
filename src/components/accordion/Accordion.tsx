@@ -1,4 +1,8 @@
-export const Accordion = (props:any) => {
+type AccordionPropsType = {
+  next: string;
+};
+
+export const Accordion = (props: AccordionPropsType) => {
   return (
     <>
       <AccordionTitle next={props.next} />
@@ -7,11 +11,11 @@ export const Accordion = (props:any) => {
   );
 };
 
-const AccordionTitle = (props:any) => {
+const AccordionTitle = (props: any) => {
   return <h3>{props.next}</h3>;
 };
 
-const AccordionBody = (props:any) => {
+const AccordionBody = (props: any) => {
   return (
     <ul>
       <li>1</li>
